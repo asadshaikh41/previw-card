@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  background-color: rgb(247, 243, 243);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50%;
+  min-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card:hover {
+  transform: scale(1.09);
+}
+.card h1 {
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+}
+.card p {
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  flex-grow: 1;
+}
+
+button {
+  border: none;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca";
+}
+
+.card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.card:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 720px) {
+  .container {
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: initial;
+  }
+}
